@@ -62,4 +62,6 @@ Sinon, clonez le projet
 ```terminal
 git clone https://github.com/git504/Ohmyfood.git
 ```
-
+```terminal
+└── @+ et merci *人
+```
