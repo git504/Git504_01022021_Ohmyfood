@@ -36,8 +36,8 @@ telles que le box-sizing ;
 @import "./base/typography";*/
 body, html {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  background-color: red;
 }
 
 /*PARTIELS : le directory base/ contient les fichiers qui définissent 
