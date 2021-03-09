@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
+%placeholders pour les extensions (si vous en utilisez) ;
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";*/
+/* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
+%placeholders pour les extensions (si vous en utilisez) ;
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";*/
+/* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
+%placeholders pour les extensions (si vous en utilisez) ;
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";*/
+/* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
+%placeholders pour les extensions (si vous en utilisez) ;
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";*/
+/*PARTIELS : le directory base/ contient les fichiers qui définissent 
+les fondations de votre site, par exemple la police de caractères 
+et les normes que vous voulez appliquer sur tout votre site, 
+telles que le box-sizing ;
+
+@import "./base/base";
+@import "./base/typography";*/
+body, html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*PARTIELS : le directory base/ contient les fichiers qui définissent 
+les fondations de votre site, par exemple la police de caractères 
+et les normes que vous voulez appliquer sur tout votre site, 
+telles que le box-sizing ;
+
+@import "./base/base";
+@import "./base/typography";*/
+/*PARTIELS : components/ est utilisé pour ranger les blocs BEM 
+qui sont plus indépendants, comme les boutons.*/
+/*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
+qui contiennent ce qui est réutilisable, 
+par exemple un header pour les mises en page de grande taille 
+ou un footer ;
+
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";*/
+/*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
+qui contiennent ce qui est réutilisable, 
+par exemple un header pour les mises en page de grande taille 
+ou un footer ;
+
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";*/
+/*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
+qui contiennent ce qui est réutilisable, 
+par exemple un header pour les mises en page de grande taille 
+ou un footer ;
+
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";*/
+/*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
+qui contiennent ce qui est réutilisable, 
+par exemple un header pour les mises en page de grande taille 
+ou un footer ;
+
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";*/
+/*PARTIELS : pages/ contient les blocs de code qui ne s’appliquent 
+qu’à une seule page. Vous utilisez des boutons dans tout votre site, 
+en revanche votre page d’accueil comporte une section Citation 
+et une grille de projets qui ne sont employés nulle part ailleurs. 
+En d’autres termes, pages/ contient des règles spécifiques à une 
+seule page qui ne seront pas réutilisées ailleurs ;
+
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";*/
+/*# sourceMappingURL=main.css.map */
