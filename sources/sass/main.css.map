@@ -15,7 +15,7 @@
         "05_layouts/_container.scss",
         "05_layouts/_footer.scss",
         "05_layouts/_form.scss",
-        "06_pages/_pages.scss"
+        "06_pages/_menus.scss"
     ],
     "names": [],
     "file": "main.css"
