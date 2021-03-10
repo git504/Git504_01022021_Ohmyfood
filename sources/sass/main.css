@@ -6,6 +6,10 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
+.header {
+  border: 10px solid rgba(198, 83, 140, 0.88);
+}
+
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -37,7 +41,7 @@ telles que le box-sizing ;
 body, html {
   margin: 0;
   scroll-behavior: smooth;
-  background-color: red;
+  background-color: yellow;
 }
 
 /*PARTIELS : le directory base/ contient les fichiers qui définissent 
@@ -95,4 +99,5 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";*/
+
 /*# sourceMappingURL=main.css.map */
