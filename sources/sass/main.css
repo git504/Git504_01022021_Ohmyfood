@@ -6,10 +6,6 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
-.header {
-  border: 10px solid rgba(198, 83, 140, 0.88);
-}
-
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -40,8 +36,8 @@ telles que le box-sizing ;
 @import "./base/typography";*/
 body, html {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
-  background-color: yellow;
 }
 
 /*PARTIELS : le directory base/ contient les fichiers qui définissent 
@@ -62,6 +58,20 @@ ou un footer ;
 @import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";*/
+.header {
+  padding: 1rem 1rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 7;
+}
+
+.header__logo {
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  text-align: center;
+}
+
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
 qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille 
@@ -80,6 +90,70 @@ ou un footer ;
 @import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";*/
+/*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
+qui contiennent ce qui est réutilisable, 
+par exemple un header pour les mises en page de grande taille 
+ou un footer ;
+
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";*/
+.footer {
+  background-color: #353535;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.footer__logo {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__listli {
+  margin: 0.5rem 0;
+}
+
+.footer__listli:first-child {
+  margin-top: 0;
+}
+
+.footer__listli:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
 qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille 
@@ -99,5 +173,4 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";*/
-
 /*# sourceMappingURL=main.css.map */

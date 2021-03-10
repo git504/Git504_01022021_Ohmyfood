@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/git504/Ohmyfood/issues"
   },
-  "homepage": "https://github.com/git504/Ohmyfood#readme",
+  "homepage": "https://git504.github.io/Ohmyfood/",
   "dependencies": {
     "sass": "^1.32.8"
   }

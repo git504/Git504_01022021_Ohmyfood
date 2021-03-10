@@ -7,8 +7,8 @@ telles que le box-sizing ;
 @import "./base/typography";*/
 
 body, html {
-    margin: 0;
-    scroll-behavior: smooth;
-    background-color: yellow;
-  }
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
 
