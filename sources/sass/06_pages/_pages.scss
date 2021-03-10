@@ -9,3 +9,9 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/about";
 @import "./pages/project";*/
 
+.heroImg {
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+  }

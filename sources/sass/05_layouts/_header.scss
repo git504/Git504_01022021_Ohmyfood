@@ -19,5 +19,24 @@ ou un footer ;
       margin: 0;
       text-align: center;
     }
+
+    &--withBackArrow {
+        position: relative;
+      }
+    
+    &__arrow {
+        position: absolute;
+        left: 2rem;
+        height: 2rem;
+        width: 2rem;
+        top: 50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: black;
+      }
   }
   
+

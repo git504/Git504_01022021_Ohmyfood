@@ -72,6 +72,31 @@ ou un footer ;
   text-align: center;
 }
 
+.header--withBackArrow {
+  position: relative;
+}
+
+.header__arrow {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: black;
+}
+
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
 qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille 
@@ -179,4 +204,11 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";*/
+.heroImg {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
