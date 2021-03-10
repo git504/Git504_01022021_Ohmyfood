@@ -90,6 +90,12 @@ ou un footer ;
 @import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";*/
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
 qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille 
@@ -140,12 +146,12 @@ ou un footer ;
   margin-bottom: 0;
 }
 
-.footer__link {
+.footer__linka {
   color: white;
   text-decoration: none;
 }
 
-.footer__link:hover {
+.footer__linka:hover {
   text-decoration: underline;
 }
 
