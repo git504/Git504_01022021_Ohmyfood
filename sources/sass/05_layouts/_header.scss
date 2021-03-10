@@ -8,35 +8,6 @@ ou un footer ;
 @import "./layouts/container";
 @import "./layouts/form";*/
 
-.header {
-    padding: 1rem $appPadding;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-    position: relative;
-    z-index: 7;
-  
-    &__logo {
-      font-family: "Shrikhand", "cursive";
-      margin: 0;
-      text-align: center;
-    }
 
-    &--withBackArrow {
-        position: relative;
-      }
-    
-    &__arrow {
-        position: absolute;
-        left: 2rem;
-        height: 2rem;
-        width: 2rem;
-        top: 50%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        transform: translateY(-50%);
-        font-size: 1.2rem;
-        color: black;
-      }
-  }
   
 
