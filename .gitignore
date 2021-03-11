@@ -1,7 +1,6 @@
 .DS_Store
 node_modules
-scenario
-sources/sass/notuseful
+notuseful
 
 # Log files
 npm-debug.log*
