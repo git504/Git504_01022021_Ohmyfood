@@ -1,0 +1,16 @@
+/*PARTIELS : components/ est utilisé pour ranger les blocs BEM 
+qui sont plus indépendants, comme les boutons.*/
+
+//btn homepage
+  .hero {
+    &__btn {
+        @include button;
+        cursor: pointer;
+      }
+    }
+
+//btn des pages menu
+.commandBtn {
+    @include button;
+    cursor: pointer;
+  }
