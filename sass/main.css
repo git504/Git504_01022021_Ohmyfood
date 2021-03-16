@@ -15,26 +15,6 @@
     transform: scale(1);
   }
 }
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0.5rem);
-  }
-  75% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -200,43 +180,135 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";*/
-.loader {
+/*.loader {
   position: fixed;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.90);
   animation: loader 0.01s;
   animation-delay: 1.75s;
   animation-fill-mode: both;
   z-index: 10000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  &__item {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    animation: jump 1s;
+    animation-iteration-count: 1;
+
+    &Container {
+      display: flex;
+      width: 5rem;
+      justify-content: space-between;
+    }
+
+    &--1 {
+      background-color: $color-primary;
+    }
+
+    &--2 {
+      background-color: $color-secondary;
+      animation-delay: 0.25s;
+    }
+
+    &--3 {
+      background-color: $color-tertiary;
+      animation-delay: 0.5s;
+    }
+  }
+
+
+}*/
+.spinner {
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.loader__item {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 1rem;
-  animation: jump 1s;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  position: fixed;
+  animation: loading 4s ease-in-out forwards;
   animation-iteration-count: 1;
 }
-.loader__itemContainer {
+@keyframes loading {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+.spinner__effect {
+  position: relative;
   display: flex;
-  width: 5rem;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
 }
-.loader__item--1 {
-  background-color: #9356DC;
+.spinner__effect:before, .spinner__effect:after {
+  content: "";
+  display: block;
 }
-.loader__item--2 {
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+@keyframes pulse-2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+.spinner__effect .circle {
+  border-radius: 100px;
+  margin: auto;
+  transform: scale(1);
+  transform-origin: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner__effect .circle__pulse--lg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff83dd;
+  animation: pulse 1.6s linear 0s infinite;
+}
+.spinner__effect .circle__pulse--md {
+  position: absolute;
+  width: 66.6%;
+  height: 66.6%;
+  background-color: #9b63df;
+  animation: pulse-2 1.6s linear 0s infinite;
+}
+.spinner__effect .circle__pulse--no {
+  position: absolute;
+  width: 33.3%;
+  height: 33.3%;
   background-color: #FF79DA;
-  animation-delay: 0.25s;
-}
-.loader__item--3 {
-  background-color: #99E2D0;
-  animation-delay: 0.5s;
 }
 
 .local {
@@ -565,7 +637,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 0.6s;
+  animation: itemAppear 0.66s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
