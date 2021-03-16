@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-//https://fonts.google.com/specimen/Shrikhand?preview.text_type=custom
 @import "./01_utils/_animations";
 @import "./01_utils/_variables";
 @import "./01_utils/_functions";
@@ -8,7 +6,7 @@
 @import "./02_vendors/_vendors";
 @import "./03_base/_base";
 @import "./03_base/_typography";
-@import "./04_component/_buttons";
+@import "./04_component/_loadingspinner";
 @import "./05_layouts/_header";
 @import "./05_layouts/_nav";
 @import "./05_layouts/_container";
