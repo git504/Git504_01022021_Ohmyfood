@@ -145,7 +145,7 @@ qui sont plus indépendants, comme les boutons.*/
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ff83dd;
+  background-color: #985ede;
   animation: pulse 1.6s linear 0s infinite;
 }
 .spinner__effect .circle__pulse--md {
@@ -160,6 +160,54 @@ qui sont plus indépendants, comme les boutons.*/
   width: 33.3%;
   height: 33.3%;
   background-color: #FF79DA;
+}
+
+/*PARTIELS : components/ est utilisé pour ranger les blocs BEM 
+qui sont plus indépendants, comme les boutons.*/
+.hero__btn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background-color: #F7F7F7;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  cursor: pointer;
+  transition-duration: 0.33s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+}
+.hero__btn:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
+}
+.hero__btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.commandBtn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background-color: #F7F7F7;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  cursor: pointer;
+  transition-duration: 0.33s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+}
+.commandBtn:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
+}
+.commandBtn a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
@@ -181,6 +229,22 @@ ou un footer ;
   font-family: "Shrikhand", "cursive";
   margin: 0;
   text-align: center;
+}
+.header--withBackArrow {
+  position: relative;
+}
+.header__arrow {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: black;
 }
 
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
@@ -296,27 +360,6 @@ seule page qui ne seront pas réutilisées ailleurs ;
 .hero__subtitle {
   font-weight: 300;
   margin: 1.5rem 0;
-}
-.hero__btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: white;
-  background-color: #F7F7F7;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-}
-.hero__btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
-}
-.hero__btn a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .tuto {
@@ -472,23 +515,6 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";*/
-.header--withBackArrow {
-  position: relative;
-}
-.header__arrow {
-  position: absolute;
-  left: 2rem;
-  height: 2rem;
-  width: 2rem;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: black;
-}
-
 .heroImg {
   max-width: 100%;
   max-height: 32rem;
@@ -698,29 +724,6 @@ seule page qui ne seront pas réutilisées ailleurs ;
   text-decoration: none;
   justify-content: center;
   padding: 3rem 0;
-}
-
-.commandBtn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: white;
-  background-color: #F7F7F7;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-.commandBtn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
-}
-.commandBtn a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /*PARTIELS : themes/, c’est ici que vous stockez le code thématique, 

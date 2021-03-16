@@ -9,26 +9,6 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/about";
 @import "./pages/project";*/
 
-.header {
-  &--withBackArrow {
-    position: relative;
-  }
-
-  &__arrow {
-    position: absolute;
-    left: 2rem;
-    height: 2rem;
-    width: 2rem;
-    top: 50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    color: black;
-  }
-}
-
 .heroImg {
   max-width: 100%;
   max-height: 32rem;
@@ -230,9 +210,4 @@ seule page qui ne seront pas réutilisées ailleurs ;
   text-decoration: none;
   justify-content: center;
   padding: 3rem 0;
-}
-
-.commandBtn {
-  @include button(primary);
-  cursor: pointer;
 }
