@@ -6,3 +6,43 @@
 @import "./utils/mixins";
 @import "./utils/extensions";*/
 
+@use "sass:color";
+// The sass:color module generates new colors based on existing ones, making it easy to build color themes.
+// https://sass-lang.com/documentation/modules/color
+// Internal Built-In Modules
+
+@mixin button($type) {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    background-color: $color-background-greylight;
+    background-image: linear-gradient(0deg, color.scale($color-primary, $alpha: -10%) 0%, color.scale($color-secondary, $alpha: -10%) 100%);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  
+    &:hover {
+      background-color: white;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+   @mixin step {
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    background-color: $color-background-greylight;
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(0deg, color.scale($color-background-greydark, $alpha: -10%) 0%, color.scale($color-background-greylight, $alpha: -10%) 50%, color.scale($color-white, $alpha: -10%) 100%);
+    cursor: pointer;
+    transition-duration: 0.33s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+    }
