@@ -1,6 +1,6 @@
 # Ohmyfood!
 
-Troisième projet du parcours "Développeur Web 100% en ligne" chez www.openclassrooms.com. L'objectif est d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass.
+Troisième projet du parcours "Développeur Web 100% en ligne 👌" chez www.openclassrooms.com. L'objectif est d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass.
 
 ## Objectifs
 
@@ -42,17 +42,17 @@ Troisième projet du parcours "Développeur Web 100% en ligne" chez www.openclas
 - Texte: Roboto
 
 **Couleurs HEX :**
-- Primaire: #9356DC
-- Secondaire: #FF79DA
-- Tertiaire: #99E2D0
+- Primaire: #9356DC 🎨
+- Secondaire: #FF79DA 🎨
+- Tertiaire: #99E2D0 🎨
 
 **Contraintes :**
-- Approche mobile-first: oui
+- Approche mobile-first: oui 📱
 - Maquette mobile : oui
-- Maquette desktop : à improviser
-- Validation W3C HTML : à passer, warning autorisés
-- Validation W3C CSS : à passer, warning autorisés
-- Compatibilité : Dernières versions de Chrome, Firefox & Safari
+- Maquette desktop : à improviser 💻
+- Validation W3C HTML : à passer, warning autorisés ✔️
+- Validation W3C CSS : à passer, warning autorisés ✔️
+- Compatibilité : Dernières versions de Chrome, Firefox & Safari ✔️
 
 ## Tester le projet
 
