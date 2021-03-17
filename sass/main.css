@@ -52,6 +52,7 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
+/*64rem X 16px font-size = 1024 RESPONSIVE BREACKPOINT*/
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -170,17 +171,17 @@ qui sont plus indépendants, comme les boutons.*/
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 100px;
-  color: white;
+  color: #FFFFFF;
   background-color: #F7F7F7;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.33s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+  box-shadow: 0.21rem 0.21rem 10px rgba(0, 0, 0, 0.33);
   cursor: pointer;
 }
 .hero__btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
+  background-color: #FFFFFF;
+  box-shadow: 0.28rem 0.28rem 10px rgba(0, 0, 0, 0.49);
 }
 .hero__btn a {
   text-decoration: none;
@@ -193,17 +194,17 @@ qui sont plus indépendants, comme les boutons.*/
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 100px;
-  color: white;
+  color: #FFFFFF;
   background-color: #F7F7F7;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.33s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+  box-shadow: 0.21rem 0.21rem 10px rgba(0, 0, 0, 0.33);
   cursor: pointer;
 }
 .commandBtn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
+  background-color: #FFFFFF;
+  box-shadow: 0.28rem 0.28rem 10px rgba(0, 0, 0, 0.49);
 }
 .commandBtn a {
   text-decoration: none;
@@ -390,14 +391,14 @@ seule page qui ne seront pas réutilisées ailleurs ;
 }
 .tuto__step:hover {
   padding: 1.5rem;
-  border-radius: 1.25rem;
+  border-radius: 1.28rem;
   background-color: #F7F7F7;
   display: flex;
   position: relative;
   background-image: linear-gradient(0deg, rgba(237, 237, 237, 0.9) 0%, rgba(247, 247, 247, 0.9) 50%, rgba(255, 255, 255, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.33s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+  box-shadow: 0.28rem 0.28rem 10px rgba(0, 0, 0, 0.33);
 }
 @media (min-width: 64rem) {
   .tuto__step {

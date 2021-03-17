@@ -17,16 +17,16 @@
     font-weight: 500;
     font-size: 1.1rem;
     border-radius: 100px;
-    color: white;
+    color: $color-white;
     background-color: $color-background-greylight;
     background-image: linear-gradient(0deg, color.scale($color-primary, $alpha: -10%) 0%, color.scale($color-secondary, $alpha: -10%) 100%);
     cursor: pointer;
     transition-duration: 0.33s;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+    box-shadow: 0.21rem 0.21rem 10px rgba(0, 0, 0, 0.33);
   
     &:hover {
-      background-color: white;
-      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.49);
+      background-color: $color-white;
+      box-shadow: 0.28rem 0.28rem 10px rgba(0, 0, 0, 0.49);
     }
   
     a {
@@ -37,12 +37,12 @@
   
    @mixin step {
     padding: 1.5rem;
-    border-radius: 1.25rem;
+    border-radius: 1.28rem;
     background-color: $color-background-greylight;
     display: flex;
     position: relative;
     background-image: linear-gradient(0deg, color.scale($color-background-greydark, $alpha: -10%) 0%, color.scale($color-background-greylight, $alpha: -10%) 50%, color.scale($color-white, $alpha: -10%) 100%);
     cursor: pointer;
     transition-duration: 0.33s;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.33);
+    box-shadow: 0.28rem 0.28rem 10px rgba(0, 0, 0, 0.33);
     }

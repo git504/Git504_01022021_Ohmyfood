@@ -7,7 +7,8 @@
 @import "./utils/extensions";*/
 
 //Améliorez la maintenabilité du code avec les variables Sass ;
-//Addon COLORZILLA to pick the exact color from template page ;
+//Addon COLORZILLA to pick the exact color from template page (maquette) ;
+//Nommer la variable en fonction de son rôle ;
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
@@ -17,5 +18,5 @@ $color-background-greydark : #EDEDED;
 $color-background-footer : #353535;
 $color-white : #FFFFFF;
 $color-icon : #7E7E7E;
-$min-width-rem : 64rem;
+$min-width-rem : 64rem; /*64rem X 16px font-size = 1024 RESPONSIVE BREACKPOINT*/
 $appPadding: 3rem;
