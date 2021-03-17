@@ -56,7 +56,7 @@ Troisième projet du parcours "Développeur Web 100% en ligne" chez www.openclas
 
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : https://git504.github.io/Ohmyfood/
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : https://git504.github.io/Git504_01022021_Ohmyfood/
 
 Sinon, clonez le projet
 ```terminal
