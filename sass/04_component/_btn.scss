@@ -1,7 +1,10 @@
 /*PARTIELS : components/ est utilisé pour ranger les blocs BEM 
 qui sont plus indépendants, comme les boutons.*/
 
-//btn HOMEPAGE
+
+/*  ---------------------------------------------------------------------- *\ 
+            btn HOMEPAGE
+\*  ---------------------------------------------------------------------- */
 .hero {
     &__btn {
         @include button;
@@ -9,7 +12,10 @@ qui sont plus indépendants, comme les boutons.*/
       }
     }
 
-//btn MENU-PAGE
+
+/*  ---------------------------------------------------------------------- *\ 
+            btn MENU-
+\*  ---------------------------------------------------------------------- */
 .commandBtn {
     @include button;
     cursor: pointer;

@@ -6,6 +6,10 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
+/*  ---------------------------------------------------------------------- *\ 
+            LOADING MENU 
+            l131
+\*  ---------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @keyframes itemAppear {
   0% {
@@ -15,6 +19,10 @@
     transform: scale(1);
   }
 }
+/*  ---------------------------------------------------------------------- *\ 
+            LOADING SPINNER
+            PULSE #1
+\*  ---------------------------------------------------------------------- */
 @keyframes pulse {
   0% {
     transform: scale(0);
@@ -28,6 +36,10 @@
     opacity: 0;
   }
 }
+/*  ---------------------------------------------------------------------- *\ 
+            LOADING SPINNER
+            PULSE #2
+\*  ---------------------------------------------------------------------- */
 @keyframes pulse-2 {
   0% {
     transform: scale(0);
@@ -37,6 +49,10 @@
     opacity: 0;
   }
 }
+/*  ---------------------------------------------------------------------- *\ 
+            LOADING SPINNER
+            POINT
+\*  ---------------------------------------------------------------------- */
 @keyframes loading {
   from {
     visibility: visible;
@@ -52,7 +68,15 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
-/*64rem X 16px font-size = 1024 RESPONSIVE BREACKPOINT*/
+/*  ---------------------------------------------------------------------- *\ 
+        "Améliorez la maintenabilité du code" avec les variables Sass ;
+        "Addon COLORZILLA" to pick the exact color from template page (maquette) ;
+        "Nommer" la variable en fonction de son "rôle" ;
+\*  ---------------------------------------------------------------------- */
+/*  ---------------------------------------------------------------------- *\ 
+            RESPONSIVE BREACKPOINT
+            64rem X 16px de font-size = 1024 px
+\*  ---------------------------------------------------------------------- */
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -74,6 +98,9 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
+/*  ---------------------------------------------------------------------- *\ 
+            PAS DE PARTIEL VENDORS
+\*  ---------------------------------------------------------------------- */
 /*PARTIELS : le directory base/ contient les fichiers qui définissent 
 les fondations de votre site, par exemple la police de caractères 
 et les normes que vous voulez appliquer sur tout votre site, 
@@ -101,8 +128,16 @@ telles que le box-sizing ;
 
 @import "./base/base";
 @import "./base/typography";*/
+/*  ---------------------------------------------------------------------- *\ 
+            Font-family : SHRIKHAND
+\*  ---------------------------------------------------------------------- */
 /*PARTIELS : components/ est utilisé pour ranger les blocs BEM 
 qui sont plus indépendants, comme les boutons.*/
+/*  ---------------------------------------------------------------------- *\ 
+LOADER HOMEPAGE 
+Tutoriel CSS Loaders animés GRAFIKARTS : https://youtu.be/ATYvN1dGp1g
+           ---> https://github.com/Grafikart/CSS3-Loaders
+\*  ---------------------------------------------------------------------- */
 .spinner {
   width: 100%;
   height: 100%;
@@ -113,10 +148,12 @@ qui sont plus indépendants, comme les boutons.*/
   z-index: 1;
   position: fixed;
   animation: loading 1s ease-in-out forwards;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
 }
 
 .spinner__effect {
+  animation: pulse;
+  animation: pulse-2;
   position: relative;
   display: flex;
   justify-content: center;
@@ -127,11 +164,6 @@ qui sont plus indépendants, comme les boutons.*/
 .spinner__effect:before, .spinner__effect:after {
   content: "";
   display: block;
-}
-
-.spinner__effect {
-  animation: pulse;
-  animation: pulse-2;
 }
 .spinner__effect .circle {
   border-radius: 100px;
@@ -146,15 +178,15 @@ qui sont plus indépendants, comme les boutons.*/
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #985ede;
-  animation: pulse 1.6s linear 0s infinite;
+  background-color: #a16be0;
+  animation: pulse 1s linear 0s infinite;
 }
 .spinner__effect .circle__pulse--md {
   position: absolute;
   width: 66.6%;
   height: 66.6%;
   background-color: #9b63df;
-  animation: pulse-2 1.6s linear 0s infinite;
+  animation: pulse-2 1s linear 0s infinite;
 }
 .spinner__effect .circle__pulse--no {
   position: absolute;
@@ -165,6 +197,9 @@ qui sont plus indépendants, comme les boutons.*/
 
 /*PARTIELS : components/ est utilisé pour ranger les blocs BEM 
 qui sont plus indépendants, comme les boutons.*/
+/*  ---------------------------------------------------------------------- *\ 
+            btn HOMEPAGE
+\*  ---------------------------------------------------------------------- */
 .hero__btn {
   border: 0;
   padding: 0.75rem 1.5rem;
@@ -188,6 +223,9 @@ qui sont plus indépendants, comme les boutons.*/
   color: inherit;
 }
 
+/*  ---------------------------------------------------------------------- *\ 
+            btn MENU-
+\*  ---------------------------------------------------------------------- */
 .commandBtn {
   border: 0;
   padding: 0.75rem 1.5rem;
@@ -257,6 +295,9 @@ ou un footer ;
 @import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";*/
+/*  ---------------------------------------------------------------------- *\ 
+            PAS DE PARTIEL NAV
+\*  ---------------------------------------------------------------------- */
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
 qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille 
@@ -266,6 +307,9 @@ ou un footer ;
 @import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";*/
+/*  ---------------------------------------------------------------------- *\ 
+            PAS DE PARTIEL CONTAINER
+\*  ---------------------------------------------------------------------- */
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
 qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille 
@@ -325,6 +369,9 @@ ou un footer ;
 @import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";*/
+/*  ---------------------------------------------------------------------- *\ 
+            PAS DE PARTIEL FORM
+\*  ---------------------------------------------------------------------- */
 /*PARTIELS : pages/ contient les blocs de code qui ne s’appliquent 
 qu’à une seule page. Vous utilisez des boutons dans tout votre site, 
 en revanche votre page d’accueil comporte une section Citation 
@@ -730,5 +777,8 @@ seule page qui ne seront pas réutilisées ailleurs ;
 /*PARTIELS : themes/, c’est ici que vous stockez le code thématique, 
 par exemple un style customisé pour Noël ou pour l’été. 
 On ne l’utilisera pas dans notre site ;*/
+/*  ---------------------------------------------------------------------- *\ 
+            PAS DE PARTIEL THEMES
+\*  ---------------------------------------------------------------------- */
 
 /*# sourceMappingURL=main.css.map */
