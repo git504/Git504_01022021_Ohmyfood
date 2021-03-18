@@ -1,3 +1,8 @@
+/*  ---------------------------------------------------------------------- *\ 
+        Indendation de la CODEBASE avec le préprocesseur CSS Sass ;
+        Compilation main.SCSS vers main.CSS avec le script dans package.json ;
+\*  ---------------------------------------------------------------------- */
+
 @import "./01_utils/_animations";
 @import "./01_utils/_variables";
 @import "./01_utils/_functions";
@@ -16,6 +21,3 @@
 @import "./06_pages/_homepage";
 @import "./06_pages/_menupage";
 @import "./07_themes/_themes";
-
-// Indendation de la CODEBASE avec le préprocesseur CSS Sass ;
-// Compilation main.SCSS vers main.CSS avec le script dans package.json ;

@@ -29,23 +29,26 @@ seule page qui ne seront pas réutilisées ailleurs ;
 .hero {
   padding: 2rem;
   text-align: center;
-  background-color: rgb(250, 250, 250);
+  background-color:$color-background-greylight;
 
   &__title {
     margin: 0;
+    color: $color-title;
   }
 
   &__subtitle {
     font-weight: 300;
+    color: $color-title;
     margin: 1.5rem 0;
   }
 }
 
 .tuto {
-  padding: ( $appPadding + 1rem ) $appPadding;
+  padding: $appPadding;
 
   &__title {
     margin-top: 0;
+    color: $color-title;
   }
 
   &__steps {
@@ -65,7 +68,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
     margin: 1rem 0 1rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
-    background-color: #f6f6f6;
+    background-color: $color-background-greylight;
     display: flex;
     position: relative;
 
@@ -93,7 +96,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
     }
 
     &::before {
-      /* On incrémente le compteur compteListe de 1 en 1 */ 
+      /* On incrémente le compteur compteListe de 1 a 1 */ 
       counter-increment: compteListe 1;
       /* Valeurs utilisant un compteur */
       content: counter(compteListe) " ";
@@ -117,11 +120,11 @@ seule page qui ne seront pas réutilisées ailleurs ;
 }
 
 .restaurants {
-  background-color: #f6f6f6;
-  padding: ($appPadding + 1rem) $appPadding;
+  background-color: $color-background-greylight;
+  padding: $appPadding;
 
   &__title {
-
+    color: $color-title;
   }
 }
 
@@ -156,11 +159,15 @@ seule page qui ne seront pas réutilisées ailleurs ;
   &__badge {
     background-color: $color-tertiary;
     color: darken($color-tertiary, 66%);
-    padding: 0.5rem;
-    border-radius: 0.125rem;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
     position: absolute;
-    top: 1rem;
-    right: 0.75rem;
+    top: 0.77rem;
+    right: 0.77rem;
+    
+    &:hover{
+      background-color: darken($color-tertiary, 7%);
+    }
   }
 
   &__footer {
@@ -176,7 +183,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
 
   &__title {
     margin: 0;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.21rem;
   }
 
   &__subtitle {
@@ -195,6 +202,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   }
 
   &__like {
-    background-color: white!important;
+    background-color: $color-white!important;
+    object-fit: cover;
   }
 }

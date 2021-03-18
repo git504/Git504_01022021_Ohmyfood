@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*  ---------------------------------------------------------------------- *\ 
+        Indendation de la CODEBASE avec le préprocesseur CSS Sass ;
+        Compilation main.SCSS vers main.CSS avec le script dans package.json ;
+\*  ---------------------------------------------------------------------- */
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -104,6 +108,9 @@
             MIXIN STEP - HOMEPAGE
             ECLAIRCIR BTN
 \*  ---------------------------------------------------------------------- */
+/*  ---------------------------------------------------------------------- *\ 
+            MIXIN TYPOGRAPHY
+\*  ---------------------------------------------------------------------- */
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -125,7 +132,6 @@ body, html {
   margin: 0;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 
 .container {
@@ -144,6 +150,13 @@ telles que le box-sizing ;
 /*  ---------------------------------------------------------------------- *\ 
             Font-family : SHRIKHAND
 \*  ---------------------------------------------------------------------- */
+body {
+  color: #070707;
+  font-size: 16px;
+  font-kerning: normal;
+  line-height: 1.2rem;
+}
+
 /*PARTIELS : components/ est utilisé pour ranger les blocs BEM 
 qui sont plus indépendants, comme les boutons.*/
 /*  ---------------------------------------------------------------------- *\ 
@@ -279,7 +292,7 @@ ou un footer ;
 }
 .header__logo {
   font-family: "Shrikhand", "cursive";
-  margin: 0;
+  margin: 1rem;
   text-align: center;
 }
 .header--withBackArrow {
@@ -345,7 +358,7 @@ ou un footer ;
   font-family: "Shrikhand", "cursive";
   margin: 0;
   font-size: 1.2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .footer__list {
   list-style: none;
@@ -413,21 +426,24 @@ seule page qui ne seront pas réutilisées ailleurs ;
 .hero {
   padding: 2rem;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #F7F7F7;
 }
 .hero__title {
   margin: 0;
+  color: #070707;
 }
 .hero__subtitle {
   font-weight: 300;
+  color: #070707;
   margin: 1.5rem 0;
 }
 
 .tuto {
-  padding: 4rem 3rem;
+  padding: 3rem;
 }
 .tuto__title {
   margin-top: 0;
+  color: #070707;
 }
 .tuto__steps {
   margin: 0;
@@ -446,7 +462,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
-  background-color: #f6f6f6;
+  background-color: #F7F7F7;
   display: flex;
   position: relative;
 }
@@ -478,7 +494,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   margin-bottom: 0;
 }
 .tuto__step::before {
-  /* On incrémente le compteur compteListe de 1 en 1 */
+  /* On incrémente le compteur compteListe de 1 a 1 */
   counter-increment: compteListe 1;
   /* Valeurs utilisant un compteur */
   content: counter(compteListe) " ";
@@ -499,9 +515,13 @@ seule page qui ne seront pas réutilisées ailleurs ;
 }
 
 .restaurants {
-  background-color: #f6f6f6;
-  padding: 4rem 3rem;
+  background-color: #F7F7F7;
+  padding: 3rem;
 }
+.restaurants__title {
+  color: #070707;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -533,11 +553,14 @@ seule page qui ne seront pas réutilisées ailleurs ;
 .card__badge {
   background-color: #99E2D0;
   color: #09211b;
-  padding: 0.5rem;
-  border-radius: 0.125rem;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
   position: absolute;
-  top: 1rem;
-  right: 0.75rem;
+  top: 0.77rem;
+  right: 0.77rem;
+}
+.card__badge:hover {
+  background-color: #7ddac3;
 }
 .card__footer {
   padding: 1rem;
@@ -550,7 +573,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
 }
 .card__title {
   margin: 0;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.21rem;
 }
 .card__subtitle {
   margin: 0;
@@ -566,7 +589,8 @@ seule page qui ne seront pas réutilisées ailleurs ;
   justify-content: center;
 }
 .card__like {
-  background-color: white !important;
+  background-color: #FFFFFF !important;
+  object-fit: cover;
 }
 
 /*PARTIELS : pages/ contient les blocs de code qui ne s’appliquent 
@@ -581,7 +605,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
 @import "./pages/project";*/
 .heroImg {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 33rem;
   width: 100%;
   object-fit: cover;
 }
@@ -589,12 +613,12 @@ seule page qui ne seront pas réutilisées ailleurs ;
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: #FFFFFF;
   z-index: 1;
   position: relative;
 }
 .menu__header {
-  padding: 1rem 2rem 0 1rem;
+  padding: 1rem 3rem 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -620,7 +644,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
 }
 .menu__btn::before {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.7s;
   content: "";
   position: absolute;
   top: 0;
@@ -630,8 +654,8 @@ seule page qui ne seront pas réutilisées ailleurs ;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 .menu__like {
-  transition-duration: 0.25s;
-  background-color: #f6f6f6;
+  transition-duration: 0.33s;
+  background-color: #FFFFFF !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -664,13 +688,13 @@ seule page qui ne seront pas réutilisées ailleurs ;
 .submenu__title {
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.7rem;
   font-weight: normal;
 }
 .submenu__title::after {
   content: "";
   width: 3rem;
-  height: 0.25rem;
+  height: 0.28rem;
   background-color: #99E2D0;
   position: absolute;
   left: 0;
@@ -683,7 +707,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.28rem 0.28rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
   animation: itemAppear 0.66s;
