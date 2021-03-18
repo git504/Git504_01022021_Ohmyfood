@@ -665,7 +665,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   align-items: center;
   justify-content: center;
   mix-blend-mode: lighten;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 .menu__btn:hover .menu__like--noBg {
   opacity: 0;
