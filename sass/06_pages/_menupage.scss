@@ -76,6 +76,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
     align-items:center;
     justify-content:center;
     mix-blend-mode: lighten;
+    object-fit: scale-down;
   }
 
   &__btn:hover {
@@ -137,7 +138,9 @@ seule page qui ne seront pas réutilisées ailleurs ;
   &__header {
     white-space: nowrap;
     text-overflow: ellipsis; 
-    //La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs. 
+    //La propriété text-overflow définit la façon dont 
+    //le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs. 
+    // ici : ...
     overflow: hidden;
     flex: 1;
   }
