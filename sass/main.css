@@ -75,7 +75,7 @@
 \*  ---------------------------------------------------------------------- */
 /*  ---------------------------------------------------------------------- *\ 
             RESPONSIVE BREACKPOINT
-            64rem X 16px de font-size = 1024 px
+            64rem X 16px de font-size = 1024px
 \*  ---------------------------------------------------------------------- */
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
@@ -91,6 +91,19 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
+/*  ---------------------------------------------------------------------- *\ 
+            SASS Internal Built-In Modules
+            The sass:color module generates new colors based on existing ones, 
+            making it easy to build color themes.
+            https://sass-lang.com/documentation/modules/color
+\*  ---------------------------------------------------------------------- */
+/*  ---------------------------------------------------------------------- *\ 
+            MIXIN BUTTON - HOMEPAGE
+\*  ---------------------------------------------------------------------- */
+/*  ---------------------------------------------------------------------- *\ 
+            MIXIN STEP - HOMEPAGE
+            ECLAIRCIR BTN
+\*  ---------------------------------------------------------------------- */
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -420,6 +433,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   margin: 0;
   padding: 0;
   list-style: none;
+  /* On initialise le compteur à compteListe 1 */
   counter-reset: compteListe;
 }
 @media (min-width: 64rem) {
@@ -464,7 +478,9 @@ seule page qui ne seront pas réutilisées ailleurs ;
   margin-bottom: 0;
 }
 .tuto__step::before {
+  /* On incrémente le compteur compteListe de 1 en 1 */
   counter-increment: compteListe 1;
+  /* Valeurs utilisant un compteur */
   content: counter(compteListe) " ";
   background: #9356DC;
   height: 1.5rem;

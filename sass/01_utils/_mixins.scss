@@ -6,11 +6,17 @@
 @import "./utils/mixins";
 @import "./utils/extensions";*/
 
+/*  ---------------------------------------------------------------------- *\ 
+            SASS Internal Built-In Modules
+            The sass:color module generates new colors based on existing ones, 
+            making it easy to build color themes.
+            https://sass-lang.com/documentation/modules/color
+\*  ---------------------------------------------------------------------- */
 @use "sass:color";
-// The sass:color module generates new colors based on existing ones, making it easy to build color themes.
-// https://sass-lang.com/documentation/modules/color
-// Internal Built-In Modules
 
+/*  ---------------------------------------------------------------------- *\ 
+            MIXIN BUTTON - HOMEPAGE
+\*  ---------------------------------------------------------------------- */
 @mixin button {
     border: 0;
     padding: 0.75rem 1.5rem;
@@ -34,7 +40,11 @@
       color: inherit;
     }
   }
-  
+
+/*  ---------------------------------------------------------------------- *\ 
+            MIXIN STEP - HOMEPAGE
+            ECLAIRCIR BTN
+\*  ---------------------------------------------------------------------- */
    @mixin step {
     padding: 1.5rem;
     border-radius: 1.28rem;

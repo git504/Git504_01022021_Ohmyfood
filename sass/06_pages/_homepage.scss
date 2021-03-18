@@ -52,6 +52,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
     margin: 0;
     padding: 0;
     list-style: none;
+    /* On initialise le compteur à compteListe 1 */
     counter-reset: compteListe;
 
     @media (min-width:$min-width-rem) {
@@ -92,7 +93,9 @@ seule page qui ne seront pas réutilisées ailleurs ;
     }
 
     &::before {
+      /* On incrémente le compteur compteListe de 1 en 1 */ 
       counter-increment: compteListe 1;
+      /* Valeurs utilisant un compteur */
       content: counter(compteListe) " ";
       background: $color-primary;
       height: 1.5rem;
