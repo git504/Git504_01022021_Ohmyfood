@@ -76,10 +76,13 @@
         "Améliorez la maintenabilité du code" avec les variables Sass ;
         "Addon COLORZILLA" to pick the exact color from template page (maquette) ;
         "Nommer" la variable en fonction de son "rôle" ;
+
+        ICI, pas de liste 
+        car elles sont difficiles à lire en revenant sur le code & non contextuel 
 \*  ---------------------------------------------------------------------- */
 /*  ---------------------------------------------------------------------- *\ 
-            RESPONSIVE BREACKPOINT
-            64rem X 16px de font-size = 1024px
+        RESPONSIVE BREACKPOINT
+        64rem X 16px de font-size = 1024px
 \*  ---------------------------------------------------------------------- */
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
@@ -120,6 +123,9 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";*/
+/*  ---------------------------------------------------------------------- *\ 
+            PAS D'EXTENSIONS DANS CE PARTIEL
+\*  ---------------------------------------------------------------------- */
 /*  ---------------------------------------------------------------------- *\ 
             PAS DE PARTIEL VENDORS
 \*  ---------------------------------------------------------------------- */
