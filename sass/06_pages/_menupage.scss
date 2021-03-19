@@ -76,7 +76,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
     align-items:center;
     justify-content:center;
     mix-blend-mode: lighten;
-    object-fit: contain;
+    object-fit: fill;
   }
 
   &__btn:hover {
