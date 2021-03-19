@@ -234,7 +234,7 @@ qui sont plus indépendants, comme les boutons.*/
   font-size: 1.1rem;
   border-radius: 100px;
   color: #FFFFFF;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.33s;
@@ -260,7 +260,7 @@ qui sont plus indépendants, comme les boutons.*/
   font-size: 1.1rem;
   border-radius: 100px;
   color: #FFFFFF;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.33s;
@@ -427,7 +427,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
 .hero {
   padding: 2rem;
   text-align: center;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .hero__title {
   margin: 0;
@@ -463,7 +463,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   display: flex;
   position: relative;
 }
@@ -471,7 +471,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
   padding: 1.5rem;
   border-radius: 1.28rem;
   display: flex;
-  background-color: #e5e5e5;
+  background-color: white;
   position: relative;
   background-image: linear-gradient(0deg, rgba(237, 237, 237, 0.9) 0%, rgba(247, 247, 247, 0.9) 50%, rgba(255, 255, 255, 0.9) 100%);
   cursor: pointer;
@@ -516,7 +516,7 @@ seule page qui ne seront pas réutilisées ailleurs ;
 }
 
 .restaurants {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 3rem;
 }
 .restaurants__title {
@@ -773,6 +773,10 @@ seule page qui ne seront pas réutilisées ailleurs ;
   color: #99E2D0;
 }
 
+/*  ---------------------------------------------------------------------- *\ 
+            syntaxe d'INTERPOLATION (variable) 
+            ICI une iteration "i" pour le deroulé du menu
+\*  ---------------------------------------------------------------------- */
 .delay-0 {
   animation-delay: 0s;
 }

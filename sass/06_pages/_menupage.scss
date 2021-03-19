@@ -203,6 +203,10 @@ seule page qui ne seront pas réutilisées ailleurs ;
   }
 }
 
+/*  ---------------------------------------------------------------------- *\ 
+            syntaxe d'INTERPOLATION (#{variable}) 
+            ICI une iteration "i" pour le deroulé du menu
+\*  ---------------------------------------------------------------------- */
 @for $i from 0 to 9 {
   .delay-#{$i} {
     animation-delay:  #{$i/10}s;

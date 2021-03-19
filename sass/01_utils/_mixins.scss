@@ -45,15 +45,10 @@
             MIXIN STEP - HOMEPAGE
             ECLAIRCIR BTN
 \*  ---------------------------------------------------------------------- */
-   @mixin step ($colour: $color-background-greylight) {
+   @mixin step ($colour: lightness-shift($color-background-greylight)){
     padding: 1.5rem;
     border-radius: 1.28rem;
     display: flex;
-    @if (lightness($colour) < 10%) {
-      $colour: lighten($colour, 10%);
-    }@else{
-      $colour: darken($colour, 7%);
-      }
     background-color: $colour;
     position: relative;
     background-image: linear-gradient(0deg, color.scale($color-background-greydark, $alpha: -10%) 0%, color.scale($color-background-greylight, $alpha: -10%) 50%, color.scale($color-white, $alpha: -10%) 100%);
