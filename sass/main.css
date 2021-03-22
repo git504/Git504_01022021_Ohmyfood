@@ -65,6 +65,10 @@
     visibility: hidden;
   }
 }
+/*  ---------------------------------------------------------------------- *\ 
+            HOVER
+            animation Underline
+\*  ---------------------------------------------------------------------- */
 @keyframes footer {
   0% {
     transform: scaleX(0);
@@ -356,6 +360,10 @@ ou un footer ;
 @import "./layouts/form";*/
 .footer {
   background-color: #353535;
+  /*  ---------------------------------------------------------------------- *\ 
+      HOVER
+      animation Underline
+  \*  ---------------------------------------------------------------------- */
 }
 .footer .container {
   display: flex;
