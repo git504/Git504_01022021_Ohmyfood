@@ -3,8 +3,8 @@
         Compilation main.SCSS vers main.CSS avec le script dans package.json ;
 \*  ---------------------------------------------------------------------- */
 
-@import "./01_utils/_animations";
 @import "./01_utils/_variables";
+@import "./01_utils/_animations";
 @import "./01_utils/_functions";
 @import "./01_utils/_mixins";
 @import "./01_utils/_extensions";
