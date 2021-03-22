@@ -58,14 +58,27 @@ ou un footer ;
       display: inline-block;
       position: relative;
 
-        &:hover::after {
-          content: '';
+      &--contact, 
+      &--mentions {
+        color: $color-white;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+
+        &:hover {
+          text-decoration: underline;
+          color: $color-white;
+        }
+      }
+
+        &:hover::before {
+          content: "";
           position: absolute;
           width: 100%;
-          animation: footer 0.25s ease-out;
+          animation: footer 0.33s ease-out;
           height: 2px;
           bottom: 0;
-          left: 0;
+          left: 28px;
           background-color: $color-white;
           transform-origin: bottom left;
           transition: transform;
