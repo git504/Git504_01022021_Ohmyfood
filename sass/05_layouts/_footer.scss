@@ -18,7 +18,7 @@ ou un footer ;
     }
     
     &__logo {
-      color: white;
+      color: $color-white;
       font-family: "Shrikhand", "cursive";
       margin: 0;
       font-size: 1.2rem;
@@ -31,7 +31,7 @@ ou un footer ;
       margin: 0;
     }
   
-    &__listElt {
+    &__listli {
       margin: 0.5rem 0;
   
       &:first-child {
@@ -42,18 +42,30 @@ ou un footer ;
         margin-bottom: 0;
       }
     }
-  
-    &__linka {
-      color: white;
-      text-decoration: none;
-  
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  
+    
     &__icon {
       width: 1.2rem;
       margin-right: 0.5rem;
     }
-  }
+
+    
+    &__linka {
+      color: $color-white;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+
+        &:hover::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          animation: footer 0.25s ease-out;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: $color-white;
+          transform-origin: bottom left;
+          transition: transform;
+        }
+    }
+}

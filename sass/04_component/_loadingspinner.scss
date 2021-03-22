@@ -18,25 +18,26 @@ Tutoriel CSS Loaders animés GRAFIKARTS : https://youtu.be/ATYvN1dGp1g
     position: fixed;
     animation: loading 1s ease-in-out forwards;
     animation-iteration-count: 1;
-  }
   
-  .spinner__effect {
-    animation: pulse;
-    animation: pulse-2;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
   
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-    }
- 
-    .circle {
+      &__effect {
+        animation: pulse;
+        animation: pulse-2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+  
+          &:before,
+          &:after {
+            content: "";
+            display: block;
+          }
+      }
+    
+      .circle {
         border-radius: 100px;
         margin: auto;
         transform: scale(1);
@@ -66,6 +67,6 @@ Tutoriel CSS Loaders animés GRAFIKARTS : https://youtu.be/ATYvN1dGp1g
             width: 33.3%;
             height: 33.3%;
             background-color: $color-secondary;
-        }
+          }
     }
-  }
+}

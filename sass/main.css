@@ -65,6 +65,14 @@
     visibility: hidden;
   }
 }
+@keyframes footer {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /* PARTIELS : dans utils/, vous rangez vos variables, fonctions, mixins et les  
 %placeholders pour les extensions (si vous en utilisez) ;
 
@@ -186,7 +194,6 @@ Tutoriel CSS Loaders animés GRAFIKARTS : https://youtu.be/ATYvN1dGp1g
   animation: loading 1s ease-in-out forwards;
   animation-iteration-count: 1;
 }
-
 .spinner__effect {
   animation: pulse;
   animation: pulse-2;
@@ -201,7 +208,7 @@ Tutoriel CSS Loaders animés GRAFIKARTS : https://youtu.be/ATYvN1dGp1g
   content: "";
   display: block;
 }
-.spinner__effect .circle {
+.spinner .circle {
   border-radius: 100px;
   margin: auto;
   transform: scale(1);
@@ -210,21 +217,21 @@ Tutoriel CSS Loaders animés GRAFIKARTS : https://youtu.be/ATYvN1dGp1g
   justify-content: center;
   align-items: center;
 }
-.spinner__effect .circle__pulse--lg {
+.spinner .circle__pulse--lg {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #a16be0;
   animation: pulse 1s linear 0s infinite;
 }
-.spinner__effect .circle__pulse--md {
+.spinner .circle__pulse--md {
   position: absolute;
   width: 66.6%;
   height: 66.6%;
   background-color: #9b63df;
   animation: pulse-2 1s linear 0s infinite;
 }
-.spinner__effect .circle__pulse--no {
+.spinner .circle__pulse--no {
   position: absolute;
   width: 33.3%;
   height: 33.3%;
@@ -364,7 +371,7 @@ ou un footer ;
   padding: 3rem;
 }
 .footer__logo {
-  color: white;
+  color: #FFFFFF;
   font-family: "Shrikhand", "cursive";
   margin: 0;
   font-size: 1.2rem;
@@ -375,25 +382,36 @@ ou un footer ;
   padding: 0;
   margin: 0;
 }
-.footer__listElt {
+.footer__listli {
   margin: 0.5rem 0;
 }
-.footer__listElt:first-child {
+.footer__listli:first-child {
   margin-top: 0;
 }
-.footer__listElt:last-child {
+.footer__listli:last-child {
   margin-bottom: 0;
-}
-.footer__linka {
-  color: white;
-  text-decoration: none;
-}
-.footer__linka:hover {
-  text-decoration: underline;
 }
 .footer__icon {
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+.footer__linka {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.footer__linka:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  animation: footer 0.25s ease-out;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform-origin: bottom left;
+  transition: transform;
 }
 
 /*PARTIELS : layouts/ est le dossier où vous mettez vos blocs BEM 
