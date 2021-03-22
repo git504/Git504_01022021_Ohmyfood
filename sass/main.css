@@ -182,7 +182,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.7);
-  z-index: 1000;
+  z-index: 100000000000;
   position: fixed;
   animation: loading 1s ease-in-out forwards;
   animation-iteration-count: 1;
