@@ -60,6 +60,7 @@ ou un footer ;
       
       &:hover{
         font-weight: bold;
+        color : $color-tertiary;
       }
       
       &--contact, 
@@ -80,7 +81,7 @@ ou un footer ;
           content: "";
           position: absolute;
           width: 87%;
-          animation: footer 1s ease-out forwards;
+          animation: footer 1s ease-out forwards; //timing-function
           height: 0.10rem;
           bottom: 0;
           left: 28px;
